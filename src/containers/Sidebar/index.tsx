@@ -1,9 +1,21 @@
 import Titulo from '../../components/Titulo'
+import Avatar from '../../components/Avatar'
+import Paragrafo from '../../components/Paragrafo'
+import { Descricao, BotaoTema, SidebarContainer } from './style'
 
 const Sidebar = () => (
   <aside>
-    <img src="https://github.com/GabrielLima-ux.png" alt="Gabriel Lima" />
-    <Titulo fontSize={20}>Gabriel Lima</Titulo>
+    <SidebarContainer>
+      <Avatar />
+      <Titulo fontSize={20}>Gabriel Lima</Titulo>
+      <Paragrafo tipo="secundario" fontSize={16}>
+        GabrielLima-ux
+      </Paragrafo>
+      <Descricao tipo="principal" fontSize={12}>
+        Engenheiro front-end
+      </Descricao>
+      <BotaoTema>Trocar tema</BotaoTema>
+    </SidebarContainer>
   </aside>
 )
 
